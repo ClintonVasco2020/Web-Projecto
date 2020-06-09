@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="_Css/estilo.Css">
+    <link rel="stylesheet"href="_Css/media.Css">
+    <link rel="stylesheet"href="_Css/fotos.Css">
+    <link rel="stylesheet"href="_Css/form.Css">
+    <script lang="javascript" src="_Js/funcoes.js"></script>
+</head>
+<body>
+    <!-- The navigation menu -->
+    <div class="navbar">
+      <a href="Index.html">Home</a>
+      <div class="subnav">
+        <button class="subnavbtn">Secção <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="Pseccao.html">Iª Secção</a>
+          <a href="Sseccao.html">IIª Secção</a>
+          <a href="Tseccao.html">IIIª Secção</a>
+          <a href="Qseccao.html">IVª Secção</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">Multimédia <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="Fotos.html">Fotos</a>
+          <a href="Muscicas.html">Músicas</a>
+          <a href="Videos.html">Vídeos</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </div>
+
+    <form method="POST" id="fContacto" action="mailto:clintonbc2014@gmail.com" oninput="calc_total();">
+
+  <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+   <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+   <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="Digite Senha"/></p>
+   <p><label for="cEmail">Email:</label> <input type="email" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="Digite Email"/></p> 
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label></br>
+        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Femina</label>
+    </fieldset>
+    <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"/></p>
+  </fieldset>
+
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="14" maxlength="80" placeholder="Rua, Avenida, Bairro"/></p>
+    <p><label for="cNum">Número</label> <input type="number" name="tNum" id="cNum" min="0" max="1000"/></p>
+    <p><label for="cProv">Província</label></p>
+    <select name="tProv" id="cProv">
+      <optgroup label="Região Norte">
+        <option value="BGO">Bengo</option>
+        <option value="CAB">Cabinda</option>
+        <option value="CNN">Cuanza Norte</option>
+        <option value="LUA" selected>Luanda</option>
+        <option value="LNO">Lunda Norte</option>
+        <option value="LSU">Lunda Sul</option>
+        <option value="MAL">Malanje</option>
+        <option value="UIG">Uíge</option>
+        <option value="ZAI">Zaire</option>
+      </optgroup>
+
+      <optgroup label="Região Centro">
+        <option value="BGU">Benguela</option>
+        <option value="BIE">Bié</option>
+        <option value="CUS">Cuanza Sul</option>
+        <option value="HUA">Huambo</option>
+        <option value="MOX">Moxico</option>
+      </optgroup>
+
+      <optgroup label="Região Sul">
+        <option value="CNN">Cunene</option>
+        <option value="CCU">Cuando-Cubango</option>
+        <option value="HUI">Huíla</option>
+        <option value="NAM">Namibe</option>
+      </optgroup>
+</fieldset> 
+
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+  <p><label for="cUrg">Urgência:</label>
+  Min<input type="range"name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+
+  <p><label for="cMsg">Mensagem:</label>
+  <textarea name="tMsg" id="cMsg" cols="45" rows="6" placeholder="Deixe aqui sua Mensagem"></textarea></p>
+</fieldset>
+
+<input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
+</form>
+<div>
+  <footer id="rodape">
+    <p>Copyright &copy; 2020 - by Cv</br> "Todos direito Reservado ao Desenvolvedor"</br>
+      <a rel="http://Facebook.com/........" target="_blank">Facebook</a>
+      <a rel="http://Twitter.com/........." target="_blank">Twitter</a></p> 
+  </footer>
+  </div>
+</body>
+</html>
